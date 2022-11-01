@@ -14,7 +14,7 @@ const Signup = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-   
+
     const handleAuth = async () => {
         const { user } = await signUp()
         setName(user?.displayName)
@@ -87,7 +87,7 @@ const Signup = () => {
                     <Input
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        type='text'
+                        type='password'
                         name='password'
                         placeholder='Type Your Password Here'
                     />

@@ -76,7 +76,7 @@ const Login = () => {
                     <Input
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        type='text'
+                        type='password'
                         name='password'
                         placeholder='Type Your Password Here'
                     />
