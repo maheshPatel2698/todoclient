@@ -67,6 +67,7 @@ const Signup = () => {
                 <FormControl>
                     <FormLabel>Your Name</FormLabel>
                     <Input
+                        id="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         type='text'
@@ -76,6 +77,7 @@ const Signup = () => {
 
                     <FormLabel>Your Email</FormLabel>
                     <Input
+                        id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type='email'
@@ -85,6 +87,7 @@ const Signup = () => {
 
                     <FormLabel>Your Password</FormLabel>
                     <Input
+                        id="pass"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         type='password'
