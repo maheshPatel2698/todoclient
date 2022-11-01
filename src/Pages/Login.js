@@ -25,10 +25,12 @@ const Login = () => {
         }
         try {
             const response = await axios.post(url, userCreds)
+
             dispatch(logIn(response.data.user))
             dispatch(authUser(response.data.token))
             localStorage.setItem('token', response.data.token)
             localStorage.setItem('user', JSON.stringify(response.data.user))
+            document.cookie('token', response.data.token)
 
             toast({
                 position: 'top',
