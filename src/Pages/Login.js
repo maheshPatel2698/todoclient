@@ -46,7 +46,7 @@ const Login = () => {
                 position: 'top',
                 status: "error",
                 title: "Login Failed",
-                description: error.response.data.message,
+                description: error?.response?.data?.message,
                 duration: 2000,
                 isClosable: true
             })
