@@ -1,0 +1,23 @@
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 4.1rem;
+  box-shadow: 0 0 0.5rem #363636;
+  cursor: pointer;
+}
+.left {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.mid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

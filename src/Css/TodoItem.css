@@ -1,0 +1,13 @@
+.icon-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.45rem;
+}
+.todo-container {
+  box-shadow: 0 0 0.5rem #363636;
+  width: 25rem;
+  margin: 0.85rem;
+  height: auto;
+}
