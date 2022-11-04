@@ -30,8 +30,6 @@ const Login = () => {
             dispatch(authUser(response.data.token))
             localStorage.setItem('token', response.data.token)
             localStorage.setItem('user', JSON.stringify(response.data.user))
-            document.cookie('token', response.data.token)
-
             toast({
                 position: 'top',
                 status: "success",
